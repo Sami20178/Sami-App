@@ -17,13 +17,18 @@
 
         <nav>
           <button class="nav-item active" data-view="home">🏠 Home</button>
+          <button class="nav-item" data-view="a-z">🔤 A-Z Apps</button>
           <button class="nav-item" data-view="games">🎮 Spiele</button>
           <button class="nav-item" data-view="apps">🧩 Apps</button>
+          <button class="nav-item" data-view="tools">🛠️ Tools</button>
+          <button class="nav-item" data-view="media">🎬 Media</button>
           <button class="nav-item" data-view="ai">🧠 KI / Modu</button>
           <button class="nav-item" data-view="start">⭐ Start</button>
           <button class="nav-item" data-view="learn">📘 Lernen</button>
+          <button class="nav-item" data-view="store">🛒 Store</button>
           <button class="nav-item" data-view="settings">⚙️ Einstellungen</button>
           <button class="nav-item" data-view="account">👤 Account</button>
+          <button class="nav-item" data-view="help">❓ Hilfe</button>
           <button class="nav-item" data-view="logout">🚪 Abmelden</button>
         </nav>
       </aside>
@@ -49,14 +54,22 @@
             <button class="quick-tile" data-jump="games">🎮 <span>Spiele</span></button>
             <button class="quick-tile" data-jump="settings">🔧 <span>Admin</span></button>
             <button class="quick-tile" data-jump="account">⬆️ <span>Upgraden</span></button>
-            <button class="quick-tile" data-jump="apps">💶 <span>Preise</span></button>
+            <button class="quick-tile" data-jump="store">💶 <span>Preise</span></button>
             <button class="quick-tile" data-jump="apps">🚀 <span>Module</span></button>
-            <button class="quick-tile" data-jump="apps">📁 <span>Fireworks</span></button>
+            <button class="quick-tile" data-jump="tools">📁 <span>Tools</span></button>
             <button class="quick-tile" data-jump="ai">▶️ <span>Screen</span></button>
             <button class="quick-tile" data-jump="settings">🎨 <span>Themes</span></button>
             <button class="quick-tile" data-jump="learn">🎯 <span>Mini-Module</span></button>
-            <button class="quick-tile" data-jump="apps">➕ <span>Bundles</span></button>
+            <button class="quick-tile" data-jump="a-z">🔤 <span>A-Z</span></button>
           </div>
+        </section>
+
+        <section class="view" data-view="a-z">
+          <article class="panel">
+            <h3>🔤 A-Z App Launcher</h3>
+            <div id="az-filter" class="az-filter"></div>
+            <ul id="az-list" class="az-list"></ul>
+          </article>
         </section>
 
         <section class="view" data-view="ai">
@@ -73,44 +86,19 @@
           </article>
         </section>
 
-        <section class="view" data-view="games">
-          <article class="panel">
-            <h3>🎮 Spiele Menü</h3>
-            <ul>
-              <li>Quiz Arena</li>
-              <li>Snake Turbo</li>
-              <li>Memory Blitz</li>
-              <li>Racing Mini</li>
-            </ul>
-          </article>
-        </section>
+        <section class="view" data-view="games"><article class="panel"><h3>🎮 Spiele Menü</h3><ul><li>Quiz Arena</li><li>Snake Turbo</li><li>Memory Blitz</li><li>Racing Mini</li><li>Galaxy Shooter</li></ul></article></section>
 
-        <section class="view" data-view="apps">
-          <article class="panel">
-            <h3>🧩 Apps Menü</h3>
-            <ul>
-              <li>Instagram Cloun</li>
-              <li>Facebook Cloun</li>
-              <li>Waapapp Cloun</li>
-              <li>Code Cloun</li>
-              <li>Pyphone Cloun</li>
-            </ul>
-          </article>
-        </section>
+        <section class="view" data-view="apps"><article class="panel"><h3>🧩 Apps Menü</h3><ul><li>Instagram Cloun</li><li>Facebook Cloun</li><li>Waapapp Cloun</li><li>Code Cloun</li><li>Pyphone Cloun</li></ul></article></section>
 
-        <section class="view" data-view="start">
-          <article class="panel">
-            <h3>⭐ Start Center</h3>
-            <p>Willkommen in der Samibookkonsole – Desktop + Konsole + Mobile in einem Design.</p>
-          </article>
-        </section>
+        <section class="view" data-view="tools"><article class="panel"><h3>🛠️ Tools</h3><ul><li>Rechner</li><li>Datei Explorer</li><li>Clipboard Manager</li><li>Screenshot Hub</li></ul></article></section>
 
-        <section class="view" data-view="learn">
-          <article class="panel">
-            <h3>📘 Lernen</h3>
-            <p>JS, Python, AI Builder, UI/UX und API Grundlagen.</p>
-          </article>
-        </section>
+        <section class="view" data-view="media"><article class="panel"><h3>🎬 Media</h3><ul><li>Music Player</li><li>Video Hub</li><li>Wallpaper Engine</li></ul></article></section>
+
+        <section class="view" data-view="start"><article class="panel"><h3>⭐ Start Center</h3><p>Willkommen in der Samibookkonsole – Desktop + Konsole + Mobile in einem Design.</p></article></section>
+
+        <section class="view" data-view="learn"><article class="panel"><h3>📘 Lernen</h3><p>JS, Python, AI Builder, UI/UX und API Grundlagen.</p></article></section>
+
+        <section class="view" data-view="store"><article class="panel"><h3>🛒 Store</h3><ul><li>Premium Themes</li><li>Mini-Module Packs</li><li>Pro Tools Bundle</li></ul></article></section>
 
         <section class="view" data-view="settings">
           <article class="panel">
@@ -120,20 +108,11 @@
           </article>
         </section>
 
-        <section class="view" data-view="account">
-          <article class="panel">
-            <h3>👤 Account</h3>
-            <p>Name: Sami Soliman</p>
-            <p>Plan: Premium Alpha</p>
-          </article>
-        </section>
+        <section class="view" data-view="account"><article class="panel"><h3>👤 Account</h3><p>Name: Sami Soliman</p><p>Plan: Premium Alpha</p></article></section>
 
-        <section class="view" data-view="logout">
-          <article class="panel">
-            <h3>🚪 Abmelden</h3>
-            <p>Du wurdest erfolgreich abgemeldet (Demo).</p>
-          </article>
-        </section>
+        <section class="view" data-view="help"><article class="panel"><h3>❓ Hilfe</h3><p>Tipps: Nutze A-Z, Suche und KI / Modu für schnelle Navigation.</p></article></section>
+
+        <section class="view" data-view="logout"><article class="panel"><h3>🚪 Abmelden</h3><p>Du wurdest erfolgreich abgemeldet (Demo).</p></article></section>
       </main>
     </div>
 
