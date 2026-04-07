@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sami App - Complete AI Suite</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <header class="profile-card">
+          <div class="avatar">👤</div>
+          <h1>Sami Soliman</h1>
+          <p class="username">@sami20178</p>
+          <span class="level">⭐ Level 42</span>
+        </header>
+
+        <section class="stats-card">
+          <h2>Statistik</h2>
+          <ul>
+            <li><span>📊 XP</span><strong>12,450</strong></li>
+            <li><span>🎮 Spiele</span><strong>28</strong></li>
+            <li><span>💬 Chats</span><strong>156</strong></li>
+            <li><span>🎯 Achievements</span><strong>18</strong></li>
+          </ul>
+        </section>
+
+        <nav>
+          <p class="section-title">Navigation</p>
+          <button class="nav-item active" data-page="home">🏠 Home</button>
+
+          <details open>
+            <summary>🧠 AI Modus</summary>
+            <button class="nav-item" data-page="overview">📋 Übersicht</button>
+            <button class="nav-item" data-page="chat">💬 Chat</button>
+            <button class="nav-item" data-page="voice">🗣️ Voice Chat</button>
+            <button class="nav-item" data-page="images">🖼️ Bilder</button>
+            <button class="nav-item" data-page="code">💻 Code</button>
+          </details>
+
+          <details open>
+            <summary>🧰 Clone Builder</summary>
+            <button class="nav-item" data-page="clone-python">🐍 Python Clone</button>
+            <button class="nav-item" data-page="clone-instagram">📸 Instagram Clone</button>
+            <button class="nav-item" data-page="clone-facebook">👥 Facebook Clone</button>
+            <button class="nav-item" data-page="clone-whatsapp">💬 WhatsApp Clone</button>
+          </details>
+
+          <details>
+            <summary>🛠️ Tools</summary>
+            <button class="nav-item" data-page="calc">🧮 Rechner</button>
+            <button class="nav-item" data-page="chat-tool">💬 Chat</button>
+            <button class="nav-item" data-page="image-tool">🖼️ Bilder Generator</button>
+          </details>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="panel" data-panel="home">
+          <h2>Sami App Programmieren</h2>
+          <p>Wähle links einen Bereich aus, um direkt einen Projekt-Start zu sehen.</p>
+        </section>
+
+        <section class="panel hidden" data-panel="clone-python">
+          <h2>🐍 Python Clone Starter</h2>
+          <p>Ein minimaler Python-Projektstarter mit Modulstruktur und CLI-Einstieg.</p>
+          <pre><code>project/
+  app/
+    __init__.py
+    main.py
+  tests/
+    test_main.py
+  requirements.txt</code></pre>
+        </section>
+
+        <section class="panel hidden" data-panel="clone-instagram">
+          <h2>📸 Instagram Clone Starter</h2>
+          <p>Vorschlag für MVP-Module: Feed, Stories, Profile, Upload, Likes und Kommentare.</p>
+          <ul class="check-list">
+            <li>Auth (Signup/Login)</li>
+            <li>Feed + Post Cards</li>
+            <li>Story Bubble UI</li>
+            <li>Profile Grid + Follow Button</li>
+          </ul>
+        </section>
+
+        <section class="panel hidden" data-panel="clone-facebook">
+          <h2>👥 Facebook Clone Starter</h2>
+          <p>MVP-Struktur für Timeline, Freunde, Gruppen und Benachrichtigungen.</p>
+          <ul class="check-list">
+            <li>Home Timeline mit Posts</li>
+            <li>Freundesliste + Requests</li>
+            <li>Kommentare und Reaktionen</li>
+            <li>Notifications Panel</li>
+          </ul>
+        </section>
+
+        <section class="panel hidden" data-panel="clone-whatsapp">
+          <h2>💬 WhatsApp Clone Starter</h2>
+          <p>Realtime-Chat Fokus: Kontaktliste, Nachrichtenansicht und Status.</p>
+          <ul class="check-list">
+            <li>Chatliste links</li>
+            <li>Nachrichtenfenster rechts</li>
+            <li>Senden/Empfangen in Echtzeit</li>
+            <li>Zuletzt online / Typing Status</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
