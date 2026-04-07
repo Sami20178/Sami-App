@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sami Ki / AI App - Samibookkonsole</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <header class="profile-card compact">
+          <div class="avatar yellow"></div>
+          <h1>Sami Soliman</h1>
+          <p class="username">@sam</p>
+        </header>
+
+        <nav>
+          <button class="nav-item active" data-view="home">🏠 Home</button>
+          <button class="nav-item" data-view="a-z">🔤 A-Z Apps</button>
+          <button class="nav-item" data-view="games">🎮 Spiele</button>
+          <button class="nav-item" data-view="apps">🧩 Apps</button>
+          <button class="nav-item" data-view="tools">🛠️ Tools</button>
+          <button class="nav-item" data-view="media">🎬 Media</button>
+          <button class="nav-item" data-view="ai">🧠 KI / Modu</button>
+          <button class="nav-item" data-view="start">⭐ Start</button>
+          <button class="nav-item" data-view="learn">📘 Lernen</button>
+          <button class="nav-item" data-view="store">🛒 Store</button>
+          <button class="nav-item" data-view="settings">⚙️ Einstellungen</button>
+          <button class="nav-item" data-view="account">👤 Account</button>
+          <button class="nav-item" data-view="help">❓ Hilfe</button>
+          <button class="nav-item" data-view="logout">🚪 Abmelden</button>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="hero">
+          <div>
+            <h2>🤖 Sami Ki / AI App</h2>
+            <p>Sami AI hilft mit Schreiben, Code und Sprachideen in der Samibookkonsole.</p>
+          </div>
+          <button id="theme-toggle">🌗 Theme</button>
+        </section>
+
+        <section class="search-wrap">
+          <input id="global-search" type="text" placeholder="Suche starten..." />
+          <button id="search-btn">mehr</button>
+        </section>
+
+        <section class="view active" data-view="home">
+          <div class="quick-grid">
+            <button class="quick-tile" data-jump="start">⭐ <span>Start</span></button>
+            <button class="quick-tile" data-jump="apps">📣 <span>Extras</span></button>
+            <button class="quick-tile" data-jump="games">🎮 <span>Spiele</span></button>
+            <button class="quick-tile" data-jump="settings">🔧 <span>Admin</span></button>
+            <button class="quick-tile" data-jump="account">⬆️ <span>Upgraden</span></button>
+            <button class="quick-tile" data-jump="store">💶 <span>Preise</span></button>
+            <button class="quick-tile" data-jump="apps">🚀 <span>Module</span></button>
+            <button class="quick-tile" data-jump="tools">📁 <span>Tools</span></button>
+            <button class="quick-tile" data-jump="ai">▶️ <span>Screen</span></button>
+            <button class="quick-tile" data-jump="settings">🎨 <span>Themes</span></button>
+            <button class="quick-tile" data-jump="learn">🎯 <span>Mini-Module</span></button>
+            <button class="quick-tile" data-jump="a-z">🔤 <span>A-Z</span></button>
+          </div>
+        </section>
+
+        <section class="view" data-view="a-z">
+          <article class="panel">
+            <h3>🔤 A-Z App Launcher</h3>
+            <div id="az-filter" class="az-filter"></div>
+            <ul id="az-list" class="az-list"></ul>
+          </article>
+        </section>
+
+        <section class="view" data-view="ai">
+          <article class="panel">
+            <h3>Echte AI Antworten (lokal intelligent)</h3>
+            <p class="muted">Schreibe eine Frage. Die AI erkennt Absicht (Code, Lernen, Planung, Allgemein) und antwortet passend.</p>
+            <div id="ai-messages" class="ai-messages">
+              <p><strong>Sami AI:</strong> Hallo! Frag mich nach Code, Python, App-Ideen oder Lernplänen.</p>
+            </div>
+            <div class="chat-send">
+              <input id="ai-input" type="text" placeholder="Frage an Sami AI..." />
+              <button id="ai-send">Senden</button>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" data-view="games"><article class="panel"><h3>🎮 Spiele Menü</h3><ul><li>Quiz Arena</li><li>Snake Turbo</li><li>Memory Blitz</li><li>Racing Mini</li><li>Galaxy Shooter</li></ul></article></section>
+
+        <section class="view" data-view="apps"><article class="panel"><h3>🧩 Apps Menü</h3><ul><li>Instagram Cloun</li><li>Facebook Cloun</li><li>Waapapp Cloun</li><li>Code Cloun</li><li>Pyphone Cloun</li></ul></article></section>
+
+        <section class="view" data-view="tools"><article class="panel"><h3>🛠️ Tools</h3><ul><li>Rechner</li><li>Datei Explorer</li><li>Clipboard Manager</li><li>Screenshot Hub</li></ul></article></section>
+
+        <section class="view" data-view="media"><article class="panel"><h3>🎬 Media</h3><ul><li>Music Player</li><li>Video Hub</li><li>Wallpaper Engine</li></ul></article></section>
+
+        <section class="view" data-view="start"><article class="panel"><h3>⭐ Start Center</h3><p>Willkommen in der Samibookkonsole – Desktop + Konsole + Mobile in einem Design.</p></article></section>
+
+        <section class="view" data-view="learn"><article class="panel"><h3>📘 Lernen</h3><p>JS, Python, AI Builder, UI/UX und API Grundlagen.</p></article></section>
+
+        <section class="view" data-view="store"><article class="panel"><h3>🛒 Store</h3><ul><li>Premium Themes</li><li>Mini-Module Packs</li><li>Pro Tools Bundle</li></ul></article></section>
+
+        <section class="view" data-view="settings">
+          <article class="panel">
+            <h3>⚙️ Einstellungen</h3>
+            <label class="row"><span>Dark Mode</span><input id="dark-switch" type="checkbox" checked /></label>
+            <label class="row"><span>AI Schnellmodus</span><input id="ai-fast" type="checkbox" checked /></label>
+          </article>
+        </section>
+
+        <section class="view" data-view="account"><article class="panel"><h3>👤 Account</h3><p>Name: Sami Soliman</p><p>Plan: Premium Alpha</p></article></section>
+
+        <section class="view" data-view="help"><article class="panel"><h3>❓ Hilfe</h3><p>Tipps: Nutze A-Z, Suche und KI / Modu für schnelle Navigation.</p></article></section>
+
+        <section class="view" data-view="logout"><article class="panel"><h3>🚪 Abmelden</h3><p>Du wurdest erfolgreich abgemeldet (Demo).</p></article></section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
