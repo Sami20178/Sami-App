@@ -21,4 +21,7 @@ CREATE TABLE users(
     verified BOOLEAN DEFAULT FALSE,
 
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+    ALTER TABLE users
+ADD profile_image VARCHAR(255) DEFAULT 'default.png';
 );
