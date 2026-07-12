@@ -1,1 +1,17 @@
-{"name":"samiscript","displayName":"SamiScript","version":"0.1.0"}
+{
+  "name": "samiscript",
+  "displayName": "SamiScript",
+  "description": "SamiScript Programming Language",
+  "version": "0.1.0",
+  "publisher": "Sami20178",
+  "engines": {"vscode": "^1.90.0"},
+  "categories": ["Programming Languages"],
+  "activationEvents": ["onLanguage:samiscript"],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [{"id":"samiscript","aliases":["SamiScript","SS"],"extensions":[".ss"],"configuration":"./language-configuration.json"}],
+    "grammars": [{"language":"samiscript","scopeName":"source.ss","path":"./syntaxes/samiscript.tmLanguage.json"}]
+  },
+  "scripts": {"build":"bash install.sh","test":"echo SamiScript"},
+  "license":"MIT"
+}
